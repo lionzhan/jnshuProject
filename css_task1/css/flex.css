@@ -1,0 +1,19 @@
+.grid-wrap{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 100px auto;
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.grid{
+    padding: 15%;
+    margin: 2.5% 0 0 2.5%;
+    border-radius: 5%;
+    background-color: orange;
+}
+
+.bot{
+    margin-bottom: 2.5%;
+}
