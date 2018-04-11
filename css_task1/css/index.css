@@ -6,11 +6,10 @@ body{
 
 /* 九宫格 */
 .grid-wrap{
-    margin: 100px auto;
+    margin: 20px auto;
     max-width: 600px;
     width: 100%;
-    border: 1px solid #000;
-    overflow: hidden; /*触发bfc*/
+
 }
 
 .grid{
@@ -22,6 +21,6 @@ body{
 }
 
 /* 添加格子的边框的距离 */
-.bot{
+/* .bot{
     margin-bottom: 2.5%;
-}
+} */
