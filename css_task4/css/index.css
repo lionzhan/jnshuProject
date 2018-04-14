@@ -1,0 +1,111 @@
+/* reset */
+html{
+    font-size: 312.5%;
+}
+body{
+    margin: 0;
+    font-size:0.32rem;
+    background-color: #eff0f4;
+    color: #fff;
+}
+
+.wrap{
+    padding-top: .88rem;
+}
+/* header */
+.header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    line-height: .88rem;
+    background-color: #5fc0cd;
+}
+
+.close-btn,.register-btn{
+    position: absolute;
+    top:0;
+    cursor:pointer;
+}
+.close-btn{
+    left: .3rem;
+}
+.register-btn{
+    right: .3rem;
+}
+.header h1{
+    margin: 0;
+    font-size: .36rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* main */
+.main{
+    
+}
+
+.inp{
+    background-color: #fff;
+    margin-top: .17rem;
+    padding: .24rem 0;
+}
+
+.inp .img{
+    width: .59rem;
+    height: .51rem;
+    margin: 0 .29rem;
+    float: left;
+    background-size: 100%;
+}
+.image-phone{
+    background-image: url('../images/phone-icon.png');
+}
+
+.image-password{
+    background-image: url('../images/password-icon.png');
+}
+
+.inp input{
+    border: none;
+    height: 0.49rem;
+    font-size: .32rem;
+    text-indent: .3rem;
+    outline:none;
+    border-left: 2px solid #e1e5e7; 
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#e1e5e7;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#e1e5e7;
+}
+
+input:-ms-input-placeholder{
+    color:#e1e5e7;
+}
+input::-webkit-input-placeholder{
+    color:#e1e5e7;
+}
+
+.btn{
+    background-color: #5fc0cd;
+    line-height: 1rem;
+    width: 100%;
+    border: none;
+    font-size: 0.36rem;
+    color: #fff;
+    margin-top: .77rem;
+    letter-spacing:0.15rem;
+    cursor:pointer;
+}
+
+.main i{
+    margin-top: .2rem;
+    font-style: normal;
+    color: #5fc0cd;
+    float: right;
+    margin-right: .30rem;
+    cursor:pointer;
+}
