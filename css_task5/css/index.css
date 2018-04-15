@@ -1,0 +1,232 @@
+/* reset */
+html{
+    font-size: 312.5%;
+}
+body{
+    margin: 0;
+    font-size: 16px;
+}
+
+p{
+    margin: 0;
+    line-height: 1;
+}
+h1{
+    margin: 0;
+
+}
+
+
+
+/* header */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #5fc0cd;
+    z-index: 1000;
+}
+
+.header h1{
+    text-align: center;
+    font-size: .36rem;
+    font-weight: normal;
+    line-height: 2.44;
+    color:#fff;
+}
+
+.backBtn{
+    position: absolute;
+    left: .3rem;
+    top: .25rem;
+    width: .3rem;
+    height: .38rem;
+    background: url(../images/test5_03.png) no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+
+/* footer */
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding:.2rem 0 .4rem 5%;
+    font-size: .34rem;
+    line-height: 2.588; 
+    background-color: #fff;
+}
+
+.btn{
+    float: left;
+    border-radius: .1rem;
+    width: 43%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-message{
+    border: 1px solid #5fc0cd;
+    color: #5fc0cd;
+    background-color: #fff;
+}
+
+.btn-contact{
+    margin-left: 3.4%;
+    border: 1px solid transparent;
+    background-color: #5fc0cd;
+    color: #fff;
+}
+
+
+/* main-start*/
+.main{
+    position: relative;
+    margin-top: .86rem;
+    margin-bottom: 2.25rem;
+    border-bottom: 2px solid #e1e5e7;
+}
+
+.data{
+    position: relative;
+    background: url(../images/test5_02.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+/* 遮罩层 */
+.shade{
+    width: 100%;
+    height: 100%;
+    padding: .74rem 0 .77rem;
+    background: rgba(0,0,0,0.2); 
+    
+}
+
+.head-portrait{
+    float: left;
+    width: 1.68rem;
+    height: 1.73rem;
+    margin-left: .3rem;
+    margin-right: .4rem;
+    border-radius: 50%;
+    background: url('../images/task5_03.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+.nameInfo{
+    padding: .4rem 0 .48rem;
+    color: #fff;
+}
+
+.name{
+    margin-bottom: .25rem;
+    font-size: .36rem;
+}
+
+.name i{
+    margin-left: .25rem;
+    font-size: .28rem;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-wz{
+    float: left;
+    width: .25rem;
+    height: .23rem;
+    margin-right: .1rem;
+    background: url(../images/task5_06.png) no-repeat;
+    background-size: 100%;
+}
+
+.address{
+    font-size: .24rem;
+}
+
+
+/* 护工资料 */
+.information{
+    font-size: .32rem;
+}
+
+.row1{
+    padding: .35rem 0;
+    border-bottom: 2px solid #e1e5e7;
+}
+
+.row1 h1{
+    border-left: 3px solid #5fc0cd;
+    margin-left: .3rem;
+    font-size: .32rem;
+    text-indent:.28rem;
+    line-height: 1;
+}
+
+.row{
+    padding: .35rem 0 .35rem .28rem;
+    margin-left: .33rem;
+    border-bottom: 2px solid #e1e5e7;
+    line-height: 1;
+    font-size: .32rem;
+}
+
+.row6{
+    border-bottom-width: 0;
+}
+
+.xx-icon{
+    display: inline-block;
+    width: .24rem;
+    height: .28rem;
+    margin-right: .1rem;
+    background: url(../images/xx-icon.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align:bottom;
+}
+
+.sl{
+    display: inline-block;
+    border-left: 1px solid #e1e5e7;
+    border-right: 1px solid #e1e5e7;
+    margin: 0 .17rem;
+    height:.32rem;
+    vertical-align:bottom;
+}
+
+.hs{
+    padding-right: .24rem;
+    margin-right: .25rem;
+    color: #999;
+    border-right: 2px solid #e1e5e7;
+}
+
+.redspan{
+    color: #e26163;
+    font-weight: bold;
+}
+.zwjs{
+    display: table-cell;
+    padding-right: .8rem;
+    
+    font-size: .26rem;
+    line-height: 1.3;  
+    text-align: justify;
+}
+.hh{
+    display: table-cell;
+    width: 1.84rem;
+    vertical-align: middle;
+    color: #999;
+}
+
+.sx{
+    display: inline-block;
+    border-left: 1px solid #e1e5e7;
+    border-right: 1px solid #e1e5e7;
+    margin: 0 .25rem;
+    height:.35rem;
+    vertical-align:bottom;
+}
+/* main-end*/
