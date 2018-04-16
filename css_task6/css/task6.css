@@ -1,0 +1,195 @@
+html {
+  font-size: 312.5%;
+}
+/*header start*/
+header {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  padding-top: .1rem;
+  padding-bottom: .08rem;
+  background-color: #5fc0cd;
+  z-index: 1000;
+}
+header .toggleBtn {
+  display: flex;
+}
+header .toggleBtn .guzhuBtn,
+header .toggleBtn .hugongBtn {
+  width: 1.44rem;
+  line-height: .7rem;
+  font-size: .34rem;
+  text-align: center;
+  border-radius: .08rem;
+}
+header .toggleBtn .guzhuBtn {
+  background-color: #55a8b3;
+  color: #fff;
+}
+header .toggleBtn .hugongBtn {
+  margin-left: -0.1rem;
+  background-color: #fff;
+  color: #5fc0cd;
+}
+header .location {
+  position: absolute;
+  right: .3rem;
+  top: .22rem;
+  width: .42rem;
+  height: .44rem;
+  background: url('../images/task6_sprites.png') -10px -232px;
+}
+/*header end*/
+/*nav start*/
+nav {
+  margin-top: 44px;
+  border-bottom: 1px solid #e2eaec;
+}
+nav .nav-col {
+  padding: 0;
+  border-right: 1px solid #e1e5e7;
+}
+nav .nav-col button {
+  width: 100%;
+  border-width: 0;
+}
+nav .nav-col ul {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+nav .nav-col span {
+  position: absolute;
+  right: .1rem;
+  top: 50%;
+  margin-top: -2px;
+}
+/*nav end*/
+/*main start*/
+main {
+  padding-bottom: 1.1rem;
+  /* 雪碧图背景图标 */
+}
+main .date-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: .14rem;
+  background: url('../images/task6_sprites.png') -10px -10px;
+}
+main .btn-icon {
+  float: right;
+  width: 10px;
+  height: 17px;
+  background: url('../images/task6_sprites.png') -10px -74px;
+}
+main .icon-location {
+  width: 12px;
+  height: 12px;
+  margin-right: .14rem;
+  background: url('../images/task6_sprites.png') -10px -42px;
+}
+main .info-li {
+  padding: .3rem;
+  border-bottom: 1px solid #e1e5e7;
+  font-size: .26rem;
+  color: #999999;
+}
+main .info-li .icon-font {
+  display: flex;
+  align-items: flex-start;
+}
+main .info-li .icon-font span {
+  line-height: 1;
+}
+main .info-li .date-price {
+  display: flex;
+  align-items: center;
+}
+main .info-li .date-price > span {
+  flex: 1;
+  padding-left: .38rem;
+  overflow: hidden;
+  /*溢出隐藏*/
+  text-overflow: ellipsis;
+  /*文本溢出省略号*/
+  white-space: nowrap;
+  /*不换行*/
+  line-height: .72rem;
+  font-size: .28rem;
+  font-weight: bold;
+  color: #000;
+}
+main .info-li .date-price .price {
+  width: 1.82rem;
+  font-size: .3rem;
+  color: red;
+  line-height: .33rem;
+}
+main .info-li .date-price .price > span {
+  float: left;
+  line-height: 1;
+}
+/*main end*/
+/*footer start*/
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  border-top: 1px solid #e2eaec;
+  background-color: #f8fafb;
+  font-size: .2rem;
+}
+footer .home,
+footer .myself {
+  text-align: center;
+  margin-top: .12rem;
+}
+footer .home p,
+footer .myself p {
+  margin-bottom: .1rem;
+}
+footer .home {
+  color: #5fc0cd;
+}
+footer .home span {
+  display: inline-block;
+  width: .46rem;
+  height: .4rem;
+  background: url('../images/task6_sprites.png') -10px -111px;
+}
+footer .myself {
+  color: #a5a5a5;
+}
+footer .myself span {
+  display: inline-block;
+  width: .42rem;
+  height: .42rem;
+  background: url('../images/task6_sprites.png') -10px -191px;
+}
+footer .myself div {
+  cursor: pointer;
+}
+footer .write {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.94rem;
+  height: 0.94rem;
+  margin-left: -0.47rem;
+  margin-top: -0.47rem;
+  border-radius: 50%;
+  background-color: #5fc0cd;
+}
+footer .write span {
+  display: block;
+  width: .4rem;
+  height: .4rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: -0.24rem 0 0 -0.19rem;
+  background: url('../images/task6_sprites.png') -10px -151px;
+}
+/*footer end*/
