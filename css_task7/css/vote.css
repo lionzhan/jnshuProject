@@ -1,0 +1,202 @@
+/*汉堡按钮 */
+.hamburgerBtn {
+  display: block;
+  position: relative;
+  width: .34rem;
+  height: .29rem;
+  border: none;
+  font-size: 0;
+  background-color: #29bde0;
+  cursor: pointer;
+}
+.hamburgerBtn:focus {
+  outline: none;
+}
+.hamburgerBtn > span {
+  display: block;
+  position: absolute;
+  height: .04rem;
+  top: .11rem;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.hamburgerBtn > span:after,
+.hamburgerBtn > span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: .04rem;
+  background-color: #fff;
+}
+.hamburgerBtn > span:after {
+  top: -0.11rem;
+}
+.hamburgerBtn > span:before {
+  bottom: -0.14rem;
+}
+/*汉堡按钮 */
+/* 重置 */
+html {
+  font-size: 312.5%;
+}
+body {
+  font-size: 16px;
+  background-color: #29bde0;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+div,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+/* 布局 */
+.g-hd {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  padding: .35rem .23rem .15rem;
+  text-align: center;
+  background-color: #29bde0;
+}
+.g-hd h3 {
+  color: #fff;
+  font-size: .34rem;
+}
+.g-ft {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: .43rem .73rem .61rem .78rem;
+  background-color: #29bde0;
+}
+.g-ft button {
+  border: none;
+  font-size: .4rem;
+  line-height: .88rem;
+  color: #fff;
+  background-color: #fbb435;
+  cursor: pointer;
+}
+.g-ft button:focus {
+  outline: none;
+}
+.g-mn {
+  margin-top: 49px;
+  margin-bottom: 98px;
+}
+.g-mn .tip-box .tip-title {
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(185, 233, 245, 0.67);
+}
+.g-mn .tip-box .tip-title h3 {
+  margin-left: .43rem;
+  line-height: .83rem;
+  font-size: .26rem;
+}
+.g-mn .tip-box .tip-title .playBtn {
+  position: relative;
+  width: .53rem;
+  height: .53rem;
+  border-radius: 50%;
+  margin-right: .18rem;
+  font-size: 0;
+  background-color: #fbb435;
+  cursor: pointer;
+}
+.g-mn .tip-box .tip-title .playBtn span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  overflow: hidden;
+  border-width: 0.16rem 0 0.16rem 0.27rem;
+  border-color: transparent transparent transparent #ffffff;
+  position: absolute;
+  top: .12rem;
+  left: .18rem;
+}
+.g-mn .tip-box > span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  overflow: hidden;
+  border-width: 0.15rem 0.075rem 0 0.075rem;
+  border-color: rgba(185, 233, 245, 0.67) transparent transparent transparent;
+}
+.g-mn .tip-box > span,
+.g-mn .tip-box > p {
+  margin-left: .4rem;
+}
+.g-mn .tip-box > p {
+  line-height: .47rem;
+  font-size: .24rem;
+  color: #fff;
+}
+.g-mn .list {
+  flex-wrap: wrap;
+  margin-top: .32rem;
+  justify-content: space-between;
+}
+.g-mn .list .item {
+  width: 25vw;
+  margin: 0 3.33333333vw;
+}
+.g-mn .list .item:hover .icon {
+  visibility: visible;
+}
+.g-mn .list .item > div {
+  margin: 0 .03rem;
+  border: .05rem solid #fff;
+  text-align: center;
+  height: 25vw;
+}
+.g-mn .list .item > div > p {
+  align-items: center;
+  justify-content: center;
+  font-size: 4vw;
+  height: 75%;
+  background-color: #f5c97b;
+  line-height: 1;
+}
+.g-mn .list .item > div > span {
+  align-items: center;
+  justify-content: center;
+  display: block;
+  background-color: #83b09a;
+  color: #fff;
+  height: 25%;
+  font-size: 3.2vw;
+  line-height: 1;
+}
+.g-mn .list .item .icon {
+  visibility: hidden;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+  justify-content: space-between;
+}
+.g-mn .list .item .icon li {
+  flex: 1;
+  margin: 0 .03rem;
+  cursor: pointer;
+}
+.g-mn .list .item .icon li img {
+  width: 100%;
+}
