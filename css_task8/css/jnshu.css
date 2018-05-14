@@ -1,0 +1,128 @@
+/* reset */
+.container{
+    max-width: 1230px;
+}
+a{
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color:#000;
+}
+/* 功能 */
+.f-verticalCenter{/* flex 垂直居中 */
+    align-items: center;
+}
+
+.f-noneSpacing{/* 字体无间距 */
+    letter-spacing: 1px !important;
+}
+/* 主题背景颜色 */
+.background-skinColor{
+    background-color: #29b078;
+}
+
+/* 技能树头部链接信息 */
+.tel-world{
+    font-size: 14px;
+    line-height: 40px;
+    color: #29b078;
+}
+.share-Link{
+    float: right;
+}
+.share-Link a{
+    float: left;
+    margin-left: 15px;
+}
+.icon{
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+#share-weixin-img {
+    background: url('../images/icon_wx.png') no-repeat center / cover;
+  }
+#share-qq-img {
+    background: url('../images/icon_qq.png') no-repeat center / cover;
+  }
+#share-weibo-img {
+    background: url('../images/icon_wb.png') no-repeat center / cover;
+  }
+
+/* nav */
+.nav-item{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+.nav-item:hover{
+    border-bottom: 4px solid #fff;
+}
+.nav-item a{
+    color: #fff;
+    font-weight: bold;
+    line-height: 96px;
+    letter-spacing: 7px;
+}
+.nav{
+    float: right;
+    margin-right: -34px;
+}
+.nav .now{
+    border-bottom: 4px solid #fff;
+}
+
+/* 轮播图 */
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border:1px solid #fff;
+}
+
+
+/* footer */
+
+.m-ft {
+    padding: 36px 0 0;
+    color:#fff;
+  }
+  .m-ft a{
+      color:#fff;
+  }
+ .m-ft p {
+    margin: 0;
+  }
+  .m-ft .u-share-wx {
+    float: right;
+    margin: 0 18px 18px 0;
+  }
+  .m-ft .u-share-wx p {
+    margin-bottom: 5px;
+  }
+  .m-ft .copyright {
+    text-align: center;
+    border-top: 1px solid #32c086;
+    line-height: 30px;
+  }
+  .m-ft .m-help {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
+  }
+  .m-ft .m-help-link {
+    padding-left: 36px;
+  }
+  .m-ft .m-help-link a {
+    display: inline-block;
+  }
+  .m-ft .m-help-link a:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .m-ft a,
+  .m-ft .copyright {
+    font-size: 14px;
+  }
