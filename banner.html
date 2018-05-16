@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .loop-wrap {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        .loop-images-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 300%;
+            /* 横向排列 3张图片 宽度应为主容器5倍 */
+            height: 100%;
+            font-size: 0;
+            transform: translate(0, 0);
+            /* 初始位置位移 */
+            animation: loop 6s linear infinite;
+        }
+
+        .loop-image {
+            width: 500px;
+            height: 300px;
+        }
+
+        /* 创建loop动画规则 */
+
+        /* 
+   轮播3张，总耗时6s，单张应为2s(33%)
+*/
+
+        @keyframes loop {
+            0% {
+                transform: translate(0, 0);
+            }
+            28% {
+                transform: translate(0, 0);
+            }
+
+
+            33% {
+                transform: translate(-33%, 0);
+            }
+            /* 切换500ms 位移-33% */
+            61% {
+                transform: translate(-33%, 0);
+            }
+
+            66% {
+                transform: translate(-66%, 0);
+            }
+            94% {
+                transform: translate(-66%, 0);
+            }
+            /* 复位到第一张图片 */
+
+            100% {transform: translate(0,0);} /* 复位到第一张图片 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loop-wrap">
+        <div class="loop-images-container">
+            <img src="../jnshuProject/css_task8and9/images/banner1.jpg" alt="" class="loop-image">
+            <img src="../jnshuProject/css_task8and9/images/banner2.png" alt="" class="loop-image">
+            <img src="../jnshuProject/css_task8and9/images/banner3.jpg" alt="" class="loop-image">
+        </div>
+    </div>
+
+</body>
+
+</html>
