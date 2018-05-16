@@ -1,0 +1,400 @@
+/* 功能 */
+.f-fr {
+  float: right;
+}
+.p-l {
+  padding-left: -15px;
+}
+.p-r {
+  padding-right: -15px;
+}
+.m-l {
+  margin-left: -15px;
+}
+.m-r {
+  margin-right: -15px;
+}
+.f-bold {
+  font-weight: bold;
+}
+.f-mr0 {
+  margin-right: 0 !important;
+}
+.f-br0 {
+  border-right: 0 !important;
+}
+/* 默认*/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+body {
+  font-family: "微软雅黑";
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: #000;
+}
+/*统一处理*/
+.nav-wrap,
+.m-ft {
+  background-color: #29b078;
+  color: #fff;
+}
+.nav-wrap a,
+.m-ft a {
+  color: #fff;
+}
+/* 模块 */
+/* m-hd */
+.m-hd .top {
+  justify-content: space-between;
+  align-items: center;
+  /*加载分享图标*/
+}
+.m-hd .top .telNum {
+  font-size: 14px;
+  line-height: 40px;
+  color: #29b078;
+}
+.m-hd .top .shareLink a {
+  float: left;
+  margin-left: 15px;
+}
+.m-hd .top .icon {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.m-hd .top #share-weixin-img {
+  background: url('../images/icon_wx.png') no-repeat center / cover;
+}
+.m-hd .top #share-qq-img {
+  background: url('../images/icon_qq.png') no-repeat center / cover;
+}
+.m-hd .top #share-weibo-img {
+  background: url('../images/icon_wb.png') no-repeat center / cover;
+}
+.m-hd .m-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.m-hd .m-nav .logo {
+  display: inline-block;
+}
+.m-hd .m-nav .list {
+  flex-grow: 0;
+}
+.m-hd .m-nav .list li {
+  width: 101px;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: 4px solid transparent;
+}
+.m-hd .m-nav .list li a {
+  line-height: 95px;
+  font-size: 16px;
+}
+.m-hd .m-nav .list li:hover,
+.m-hd .m-nav .list li.active {
+  border-color: #fff;
+}
+/* /m-hd */
+/* m-ft */
+.m-ft {
+  padding: 36px 0 0;
+}
+.m-ft p {
+  margin: 0;
+}
+.m-ft .u-share-wx {
+  float: right;
+  margin: 0 18px 18px 0;
+}
+.m-ft .u-share-wx p {
+  margin-bottom: 5px;
+}
+.m-ft .copyright {
+  text-align: center;
+  border-top: 1px solid #32c086;
+  line-height: 30px;
+}
+.m-ft .m-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+}
+.m-ft .m-help-link {
+  padding-left: 36px;
+}
+.m-ft .m-help-link a {
+  display: inline-block;
+}
+.m-ft .m-help-link a:hover {
+  border-bottom: 1px solid #fff;
+}
+.m-ft a,
+.m-ft .copyright {
+  font-size: 14px;
+}
+/* /m-ft */
+.m-mn {
+  background-color: #fafafa;
+}
+/*状态*/
+.crumb_crt {
+  color: #29b078;
+}
+/*响应式*/
+@media (min-width: 992px) {
+  .list .navbar-nav {
+    margin-right: -34.5px;
+  }
+}
+@media (max-width: 992px) {
+  .m-hd .m-nav {
+    padding: 10px 0;
+  }
+  .m-nav .list li {
+    width: 100% !important;
+  }
+  .m-nav .list li a {
+    line-height: 50px !important;
+  }
+  .m-ft .m-help {
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    border-bottom: 1px solid #32c086;
+    margin-bottom: 20px;
+  }
+  .m-ft .m-help p {
+    margin-bottom: 10px;
+  }
+  .m-ft .u-share-wx {
+    float: none;
+  }
+}
+@media (max-width: 576px) {
+  .m-hd .top .shareLink a {
+    margin-left: 5px;
+  }
+  .m-hd .top .telNum {
+    font-size: 12px;
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+main {
+  background-color: #fafafa;
+  padding-bottom: 239px;
+}
+.title_nav {
+  padding: 30px 0;
+  border-bottom: 1px solid #d0d6d9;
+}
+.title_nav .crt_title_nav {
+  color: #29b078;
+}
+.profession_nav {
+  flex-wrap: wrap;
+  padding: 0;
+  border-bottom: 1px solid #edf1f2;
+}
+.profession_nav li {
+  margin: 20px 22px 20px 0;
+  padding: 3px;
+}
+.profession_nav li:hover {
+  background-color: #29b078;
+}
+.profession_nav li:hover a {
+  color: #fff;
+}
+.profession_nav .crt-profession_nav {
+  background-color: #29b078;
+}
+.profession_nav .crt-profession_nav a {
+  color: #fff;
+}
+.content-wrap {
+  overflow: hidden;
+}
+.content h3,
+.content .Number-of-people,
+.content .red_font_color + span,
+.content .pay li {
+  color: #000;
+}
+.content .red_font_color {
+  color: red;
+}
+.content .Number-of-people,
+.content h3 {
+  font-weight: bold;
+}
+.content .Number-of-people,
+.content .keyworld li,
+.content .tip {
+  line-height: 40px;
+}
+.content h2 {
+  line-height: 80px;
+  border-bottom: 1px solid #d0d6d9;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+.content .box {
+  position: relative;
+  margin-top: 48px;
+  padding-top: 20px;
+  z-index: 2000;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #999999;
+}
+.content .synopsis,
+.content .keyworld li,
+.content .Number-of-people,
+.content .pay li,
+.content .pay-title {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.content .synopsis {
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+.content .synopsis img {
+  float: left;
+  width: 38.61111111%;
+  height: 100%;
+  margin-right: 6px;
+}
+.content .synopsis h3 {
+  font-size: 16px;
+  line-height: 45px;
+}
+.content .synopsis p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.content .keyworld {
+  flex-wrap: wrap;
+}
+.content .keyworld li {
+  flex: 0 0 50%;
+}
+.content .keyworld img {
+  margin-left: 10px;
+}
+.content .Number-of-people {
+  font-size: 14px;
+}
+.content .tip {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+.content .pay-title {
+  flex: 0 0 41.66666667%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .pay {
+  flex: 1;
+}
+.content .pay li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 35px;
+  padding-left: 25px;
+}
+.content .pay li i {
+  font-style: normal;
+}
+.content .hoverTip {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(61, 61, 61, 0.9);
+  font-size: 16px;
+  padding: 50px 40px;
+  transform: rotateY(180deg);
+  text-align: justify;
+}
+.content .hoverTip h3 {
+  color: #fff;
+  font-size: 16px;
+  line-height: 90px;
+  text-align: center;
+}
+.content .hoverTip p {
+  text-indent: 2em;
+  font-weight: bold;
+}
+.content .box:hover .hoverTip {
+  visibility: visible;
+  transform: rotateY(0deg);
+  transition: 1s;
+}
+/*响应式*/
+@media (min-width: 1200px) {
+  .content {
+    width: 1226px;
+  }
+  .col-1-3 {
+    flex: 0 0 33.3333%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .box {
+    margin-right: 26px;
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .box {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+@media (max-width: 400px) {
+  .synopsis h3 {
+    line-height: 20px !important;
+  }
+  .hoverTip {
+    padding: 20px 10px !important;
+  }
+}
