@@ -276,6 +276,8 @@ main .study-box .circle {
   border-radius: 50%;
   color: #29b078;
   background-color: #fff;
+  box-shadow:  1px 1px 5px #888888; 
+  /* box-shadow:  1px 1px 5px #888888 inset; */
 }
 main .study-box p {
   flex-shrink: 1;
@@ -313,10 +315,10 @@ main .outstanding-students strong {
   font-size: 18px;
   color: #000;
 }
-main .box-circle {
+/* main .box-circle {
   display: flex;
   justify-content: center;
-}
+} */
 main .smallcircle {
   margin: 24px 5px 0;
   width: 15px;
@@ -405,10 +407,17 @@ main .link .disc {
     margin-right: 0;
   }
 }
+@media(min-width:992px){
+  .box-circle{
+    margin: 0;
+    margin-left: -20px;
+  }
+}
 @media (max-width: 992px) {
   main {
     padding-top: 50px;
   }
+
 }
 @media (max-width: 768px) {
   .box-item {
@@ -436,4 +445,17 @@ main .link .disc {
   border-radius: 50%;
   background-color: transparent;
   border:1px solid #fff;
+}
+
+.box-circle{
+  bottom:-50px;
+
+  
+}
+.box-circle li{
+  background-color: #fff;
+}
+
+.box-circle .active{
+  background-color: #29b078;
 }

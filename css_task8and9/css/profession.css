@@ -398,3 +398,9 @@ main {
     padding: 20px 10px !important;
   }
 }
+@media (max-width:350px){
+  .content .keyworld .line-block{
+    flex:0 0 100%;
+    border-right: 0
+  }
+}
