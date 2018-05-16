@@ -34,10 +34,7 @@
         }
 
         /* 创建loop动画规则 */
-
-        /* 
-   轮播3张，总耗时6s，单张应为2s(33%)
-*/
+        /* 轮播3张，总耗时6s，单张应为2s(33%) */
 
         @keyframes loop {
             0% {
@@ -51,7 +48,6 @@
             33% {
                 transform: translate(-33%, 0);
             }
-            /* 切换500ms 位移-33% */
             61% {
                 transform: translate(-33%, 0);
             }
@@ -62,9 +58,11 @@
             94% {
                 transform: translate(-66%, 0);
             }
-            /* 复位到第一张图片 */
 
-            100% {transform: translate(0,0);} /* 复位到第一张图片 */
+            100% {
+                transform: translate(0, 0);
+            }
+            /* 复位到第一张图片 */
         }
     </style>
 </head>
