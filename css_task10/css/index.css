@@ -47,14 +47,15 @@ ul {
 
 .m-hd .sign-in {
   border-left: 1px solid #fff;
-  padding: 0 10px;
+  padding: 0 35px;
   color: #fff;
 }
 
 .m-hd .sign-up {
   padding: 0 35px;
-  color: #000;
-  background-color: #fff;
+  color:#fff;
+  /* color: #000; */
+  /* background-color: #fff; */
 }
 
 .m-hd .nav-wrap {
@@ -391,6 +392,22 @@ ul {
   clear: both;
 }
 
+.m-mn .select-btn .select{
+  z-index: 500;
+  position: relative;
+  background-color: transparent;
+}
+.m-mn .select-btn{
+  background-color: #fff;
+}
+
+.m-hd .login a:hover{
+  text-decoration: none;
+}
+.m-hd .sign-up:hover,.m-hd .sign-in:hover{
+  background-color: #fff;
+  color: #000;
+}
 /* 响应式 */
 
 @media (max-width: 1200px) {
