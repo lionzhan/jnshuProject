@@ -1,89 +1,114 @@
 /*重置*/
+
 body {
   margin: 0;
   font-family: "微软雅黑";
 }
+
 a {
   color: #000;
   text-decoration: none;
 }
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 /* 布局 */
+
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
+
 /*  模块 */
+
 .m-hd .top {
   line-height: 40px;
   background-color: #1d7ad9;
   color: #fff;
   font-size: 16px;
 }
+
 .m-hd .login {
   float: right;
 }
+
 .m-hd .tel-world {
   font-size: 15px;
 }
+
 .m-hd .login a {
   display: inline-block;
 }
+
 .m-hd .sign-in {
   border-left: 1px solid #fff;
   padding: 0 10px;
   color: #fff;
 }
+
 .m-hd .sign-up {
   padding: 0 35px;
   color: #000;
   background-color: #fff;
 }
+
 .m-hd .nav-wrap {
   background-color: #f9f9f9;
 }
+
 .m-hd .nav {
-  float: right;
+  padding: 23px 0 23px 0;
 }
+
+.m-hd .nav .navbar-collapse{
+  flex-direction:row-reverse;
+}
+
 .m-hd .item {
   float: left;
   padding: 14px;
-  margin: 23px 0  23px 60px;
+  margin: 0 0 0 60px;
   border-radius: 5px;
   background-color: #fff;
   cursor: pointer;
 }
+
 .m-hd .item:hover,
 .m-hd .active {
   background-color: #1d7ad9;
   color: #fff;
 }
+
 .m-mn .procedure-nav {
   float: right;
   margin-bottom: 50px;
   overflow: hidden;
 }
+
 .m-mn .pro-item {
   float: left;
   margin-right: -2px;
   margin-top: 50px;
   cursor: pointer;
 }
+
 .m-mn .pro-item p {
   margin-top: 30px;
   font-size: 18px;
   text-align: center;
   color: #cccccc;
 }
+
 .m-mn .pro-item:hover .pattern,
 .m-mn .pro_active {
   background-color: #ff7f02 !important;
 }
+
 .m-mn .pro-item:hover .pattern .circle,
 .m-mn .pro_active .circle {
   width: 25px;
@@ -91,10 +116,12 @@ ul {
   transform: translate(-50%, -10px);
   background-color: #ff7f02 !important;
 }
-.m-mn .pro-item:hover .pattern + p,
-.m-mn .pro_active + p {
+
+.m-mn .pro-item:hover .pattern+p,
+.m-mn .pro_active+p {
   color: #ff7f02 !important;
 }
+
 .m-mn .pattern {
   position: relative;
   width: 160px;
@@ -102,6 +129,7 @@ ul {
   background-color: #cccccc;
   border-radius: 5px;
 }
+
 .m-mn .circle {
   display: flex;
   justify-content: center;
@@ -116,11 +144,13 @@ ul {
   color: #fff;
   background-color: #cccccc;
 }
+
 .m-mn h3 {
   clear: both;
   font-size: 22px;
   line-height: 1;
 }
+
 .m-mn .ct-icon {
   display: inline-block;
   width: 5px;
@@ -130,12 +160,14 @@ ul {
   border-radius: 10px;
   margin-right: 5px;
 }
+
 .m-mn .content {
   border-radius: 5px;
   border: 1px solid #e7e7e7;
   margin-bottom: 53px;
   font-size: 18px;
 }
+
 .m-mn .tip-title {
   line-height: 45px;
   background-color: #f3f3f3;
@@ -143,15 +175,18 @@ ul {
   font-weight: bold;
   border-bottom: 1px solid #e7e7e7;
 }
-.m-mn .tip-title > img {
+
+.m-mn .tip-title>img {
   vertical-align: middle;
   margin-left: 15px;
   margin-right: 5px;
 }
+
 .m-mn .btn-wrap {
   text-align: center;
   padding: 140px 0 95px 0;
 }
+
 .m-mn .btn {
   border: none;
   border-radius: 5px;
@@ -161,9 +196,11 @@ ul {
   color: #fff;
   background-color: #e15053;
 }
+
 .m-mn .btn:focus {
   outline: none;
 }
+
 .m-mn .content-text {
   position: relative;
   padding-left: 45px;
@@ -173,16 +210,19 @@ ul {
   color: #8b8c8c;
   background-color: #fbfcff;
 }
+
 .m-mn .content-text i {
   vertical-align: middle;
   margin-left: -4px;
   font-style: normal;
   margin-right: 60px;
 }
+
 .m-mn label {
   display: inline-block;
 }
-.m-mn input[type=radio] + span {
+
+.m-mn input[type=radio]+span {
   box-sizing: border-box;
   display: inline-block;
   width: 16px;
@@ -193,14 +233,17 @@ ul {
   vertical-align: middle;
   margin-right: 15px;
 }
-.m-mn input[type=radio]:checked + span {
+
+.m-mn input[type=radio]:checked+span {
   width: 16px;
   height: 16px;
   border: solid 6px #1d7ad9;
 }
+
 .m-mn .hidden {
   display: none;
 }
+
 .m-mn .select-btn {
   width: 125px;
   position: absolute;
@@ -208,6 +251,7 @@ ul {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .m-mn .select-btn .select {
   width: 100%;
   line-height: 35px;
@@ -221,6 +265,7 @@ ul {
   /* Safari 和 Chrome */
   border: 1px solid #e7e7e7;
 }
+
 .m-mn .select-btn span {
   position: absolute;
   right: 4px;
@@ -232,6 +277,7 @@ ul {
   border-radius: 3px;
   background-color: #1d7ad9;
 }
+
 .m-mn .select-btn .triangle-white {
   position: absolute;
   top: 50%;
@@ -244,25 +290,32 @@ ul {
   width: 0;
   height: 0;
 }
+
 .m-mn .size {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
 .m-mn .size i {
   display: inline-block;
 }
-.m-mn .box + .content-text > label {
+
+.m-mn .box+.content-text>label {
   margin-top: 35px;
 }
-.m-mn .box + .content-text {
+
+.m-mn .box+.content-text {
   padding-bottom: 35px;
 }
-.m-mn .material + .content-text > label {
+
+.m-mn .material+.content-text>label {
   margin-top: 55px;
 }
-.m-mn .material + .content-text {
+
+.m-mn .material+.content-text {
   padding-bottom: 55px;
 }
+
 .m-mn input {
   width: 70px;
   line-height: 30px;
@@ -270,9 +323,11 @@ ul {
   border: none;
   border: 1px solid #e8e8e8;
 }
+
 .m-ft .ft-top {
   background-color: #f9f9f9;
 }
+
 .m-ft .ft-bottom {
   background-color: #1d7ad9;
   text-align: center;
@@ -280,51 +335,64 @@ ul {
   color: #fff;
   line-height: 30px;
 }
+
 .m-ft p {
   display: inline-block;
   margin: 0;
   text-align: justify;
 }
+
 .m-ft .top-inner {
   display: flex;
   padding-top: 58px;
   color: #999999;
 }
-.m-ft .top-inner > * {
+
+.m-ft .top-inner>* {
   flex: 0 0 33.3333%;
   margin-bottom: 55px;
 }
+
 .m-ft .top-inner h3 {
   font-size: 18px;
   line-height: 44px;
   margin-top: 0;
 }
+
 .m-ft .top-inner .link {
   margin-left: 30px;
 }
+
 .m-ft .top-inner .link li {
   float: left;
   margin-right: 40px;
 }
+
 .m-ft .top-inner .link li a {
   color: #999999;
   line-height: 36px;
 }
+
 .m-ft .top-inner .link li a:hover {
   color: #1d7ad9;
 }
-.m-ft .top-inner .information > * {
+
+.m-ft .top-inner .information>* {
   float: right;
   margin-left: 15px;
   line-height: 30px;
 }
+
 /* 功能 */
+
 .clear:after {
   content: "";
   display: block;
   clear: both;
 }
+
 /* 响应式 */
+
 @media (max-width: 1200px) {
   .container {
     box-sizing: border-box;
@@ -334,49 +402,96 @@ ul {
     margin-right: 20px;
   }
 }
+
 @media (max-width: 920px) {
   .m-ft .top-inner {
     flex-wrap: wrap;
   }
-  .m-ft .top-inner > * {
+  .m-ft .top-inner>* {
     flex-basis: 50%;
   }
-  .m-ft .top-inner .information > * {
+  .m-ft .top-inner .information>* {
     float: left;
     margin-left: 0;
     margin-right: 15px;
   }
 }
+
 @media (max-width: 768px) {
-  .m-hd .nav {
+  /* .m-hd .nav {
     float: none;
   }
   .m-hd .nav .item {
     margin-right: 20px;
     margin-left: 0;
-  }
-  .m-mn .procedure-nav {
+  } */
+  /* .m-mn .procedure-nav {
     float: none;
-  }
-  .m-mn .pro-item {
+  } */
+  /* .m-mn .pro-item {
     width: 50%;
-  }
+  } */
   .m-mn .pattern {
-    width: 100%;
+    width: 130px;
   }
   .m-mn .content-text {
-    padding-left: 15px;
+    padding: 0;
   }
-  .m-mn .size label {
+  .m-mn label,.m-mn .size>i {
     display: block;
+    text-align: center;
   }
-  .m-mn .size > i {
+  .m-mn .size>i{
+    margin-top: 10px;
+  }
+  .m-mn .select-btn{
+    position: static;
+    transform: translateY(0);
+    margin-top: 20px;
+    margin: 40px auto;
+  }
+
+  .m-mn .box+.content-text,.m-mn .material+.content-text{
+    padding-bottom: 0;
+  }
+  /* .m-mn .size>i {
     margin: 0;
     margin-top: 15px;
+  } */
+
+  .m-mn .content-text i {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .m-mn .btn-wrap{
+    padding: 50px 0;
+  }
+
+  .m-hd .item{
+    margin:20px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .m-hd .nav{
+    padding: 10px 0;
+  }
+
+  .m-hd .login a{
+    font-size: 12px;
+  }
+  .m-ft .top-inner{
+    padding-top: 20px;
+  }
+
+  .m-mn .btn{
+    font-size: 16px;
   }
 }
+
 @media (max-width: 622px) {
-  .m-ft .top-inner > * {
+  .m-ft .top-inner>* {
     flex-basis: 100%;
   }
   .m-ft .top-inner .link {
@@ -386,20 +501,33 @@ ul {
     font-size: 16px;
   }
 }
+
+
+
 @media (max-width: 576px) {
+  .m-mn .pattern {
+    width: 100px;
+  }
+  .m-mn .pro-item p {
+    font-size: 13px;
+  }
   .tel-world {
     display: none;
   }
-  .m-hd .nav .item {
+  /* .m-hd .nav .item {
     padding: 8px;
     margin: 10px 10px 10px 0;
     font-size: 14px;
-  }
+  } */
   .m-mn h3 {
     font-size: 16px;
     line-height: 25px;
   }
-  .m-mn .content {
-    font-size: 14px;
+  
+}
+
+@media (max-width:425px){
+  .m-mn .pattern {
+    width: 70px;
   }
 }
