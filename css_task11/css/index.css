@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/*重置*/
+/*默认*/
+html {
+  font-size: 312.5%; }
+
+body {
+  margin: 0;
+  background-color: #eff0f4;
+  font-size: 0.32rem;
+  color: #fff; }
+
+/* 布局 */
+.g-hd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.g-mn {
+  margin-top: 1.05rem; }
+
+.g-inp {
+  display: flex;
+  margin-top: .17rem;
+  padding: .24rem 0;
+  background-color: #fff; }
+
+/* 模块 */
+.m-hd {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #5fc0cd;
+  line-height: .88rem; }
+  .m-hd .close-btn,
+  .m-hd .register-btn {
+    cursor: pointer; }
+  .m-hd .close-btn {
+    margin-left: .3rem; }
+  .m-hd .register-btn {
+    margin-right: .3rem; }
+  .m-hd h1 {
+    margin: 0;
+    font-size: .36rem;
+    text-align: center;
+    font-weight: normal; }
+
+.m-login .image-phone,
+.m-login .image-password {
+  width: .59rem;
+  height: .51rem;
+  margin: 0 .29rem;
+  float: left;
+  background-size: 100%; }
+.m-login .image-phone {
+  background-image: url("../images/phone-icon.png"); }
+.m-login .image-password {
+  background-image: url("../images/password-icon.png"); }
+.m-login input {
+  flex: 1;
+  border: none;
+  height: 0.49rem;
+  font-size: .32rem;
+  text-indent: .3rem;
+  outline: none;
+  border-left: 2px solid #e1e5e7; }
+.m-login :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e1e5e7; }
+.m-login ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e1e5e7; }
+.m-login input:-ms-input-placeholder {
+  color: #e1e5e7; }
+.m-login input::-webkit-input-placeholder {
+  color: #e1e5e7; }
+.m-login .btn {
+  background-color: #5fc0cd;
+  line-height: 1rem;
+  width: 100%;
+  border: none;
+  font-size: 0.36rem;
+  color: #fff;
+  margin-top: .77rem;
+  letter-spacing: 0.15rem;
+  cursor: pointer; }
+.m-login p {
+  margin-top: .2rem;
+  color: #5fc0cd;
+  float: right;
+  margin-right: .30rem;
+  cursor: pointer; }
+
+/*# sourceMappingURL=index.css.map */

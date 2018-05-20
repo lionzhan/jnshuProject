@@ -1,0 +1,122 @@
+$skin-color:#5fc0cd;
+/*重置*/
+
+/*默认*/
+
+html {
+    font-size: 312.5%;
+}
+
+body {
+    margin: 0;
+    background-color: #eff0f4;
+    font-size: 0.32rem;
+    color: #fff;
+}
+
+/* 布局 */
+
+.g-hd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.g-mn {
+    margin-top: .88+.17rem;
+}
+
+.g-inp {
+    display: flex;
+    margin-top: .17rem;
+    padding: .24rem 0;
+    background-color: #fff;
+}
+
+/* 模块 */
+
+.m-hd {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: $skin-color;
+    line-height: .88rem;
+    .close-btn,
+    .register-btn {
+        cursor: pointer;
+    }
+    .close-btn {
+        margin-left: .3rem;
+    }
+    .register-btn {
+        margin-right: .3rem;
+    }
+    h1 {
+        margin: 0;
+        font-size: .36rem;
+        text-align: center;
+        font-weight: normal;
+    }
+}
+
+.m-login {
+    .image-phone,
+    .image-password {
+        width: .59rem;
+        height: .51rem;
+        margin: 0 .29rem;
+        float: left;
+        background-size: 100%;
+    }
+    .image-phone {
+        background-image: url('../images/phone-icon.png');
+    }
+    .image-password {
+        background-image: url('../images/password-icon.png');
+    }
+    input {
+        flex: 1;
+        border: none;
+        height: 0.49rem;
+        font-size: .32rem;
+        text-indent: .3rem;
+        outline: none;
+        border-left: 2px solid #e1e5e7;
+    }
+    :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #e1e5e7;
+    }
+    ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #e1e5e7;
+    }
+    input:-ms-input-placeholder {
+        color: #e1e5e7;
+    }
+    input::-webkit-input-placeholder {
+        color: #e1e5e7;
+    }
+
+    .btn{
+        background-color: #5fc0cd;
+        line-height: 1rem;
+        width: 100%;
+        border: none;
+        font-size: 0.36rem;
+        color: #fff;
+        margin-top: .77rem;
+        letter-spacing:0.15rem;
+        cursor:pointer;
+    }
+
+    p{
+        margin-top: .2rem;
+        color: #5fc0cd;
+        float: right;
+        margin-right: .30rem;
+        cursor:pointer;
+    }
+}
