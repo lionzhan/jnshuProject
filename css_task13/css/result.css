@@ -59,7 +59,6 @@ h3 {
 /* 布局 */
 .g-wrap {
   position: relative;
-  max-width: 920px;
   width: 100%;
   margin: 0 auto;
 }
@@ -68,7 +67,6 @@ h3 {
   top: 0;
   position: fixed;
   z-index: 1000;
-  max-width: 920px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -182,7 +180,6 @@ h3 {
   bottom: 0;
   position: fixed;
   z-index: 1000;
-  max-width: 920px;
   width: 100%;
   box-sizing: border-box;
   padding: .24rem 0 .19rem;

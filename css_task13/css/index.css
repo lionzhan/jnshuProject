@@ -51,7 +51,6 @@ body {
 /* 布局 */
 .g-wrap {
   position: relative;
-  max-width: 920px;
   width: 100%;
   margin: 0 auto;
 }

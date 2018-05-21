@@ -66,7 +66,6 @@ ul {
 /* 布局 */
 .g-wrap {
   position: relative;
-  max-width: 920px;
   width: 100%;
   margin: 0 auto;
 }
@@ -75,7 +74,6 @@ ul {
   top: 0;
   position: fixed;
   z-index: 1000;
-  max-width: 920px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -94,7 +92,6 @@ ul {
   bottom: 0;
   position: fixed;
   z-index: 1000;
-  max-width: 920px;
   width: 100%;
   box-sizing: border-box;
   padding: .43rem .73rem .61rem .78rem;
