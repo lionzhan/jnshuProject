@@ -1,6 +1,8 @@
 $skin-color:#5fc0cd;
 /*重置*/
-
+input{
+    width: 1rem;
+}
 /*默认*/
 
 html {
@@ -9,9 +11,9 @@ html {
 
 body {
     margin: 0;
-    background-color: #eff0f4;
     font-size: 0.32rem;
     color: #fff;
+    background-color: #eff0f4;
 }
 
 /* 布局 */
@@ -41,8 +43,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    background-color: $skin-color;
     line-height: .88rem;
+    background-color: $skin-color;
     .close-btn,
     .register-btn {
         cursor: pointer;
@@ -64,26 +66,26 @@ body {
 .m-login {
     .image-phone,
     .image-password {
-        width: .59rem;
+        width: .59+.29+.29rem;
         height: .51rem;
-        margin: 0 .29rem;
-        float: left;
-        background-size: 100%;
+        
     }
     .image-phone {
-        background-image: url('../images/phone-icon.png');
+        background: url('../images/phone-icon.png') no-repeat center;
+        background-size:50%;
     }
     .image-password {
-        background-image: url('../images/password-icon.png');
+        background: url('../images/password-icon.png') no-repeat center;
+        background-size:50%;
     }
     input {
         flex: 1;
-        border: none;
         height: 0.49rem;
         font-size: .32rem;
         text-indent: .3rem;
-        outline: none;
+        border: none;
         border-left: 2px solid #e1e5e7;
+        outline: none;
     }
     :-moz-placeholder {
         /* Mozilla Firefox 4 to 18 */
@@ -101,22 +103,23 @@ body {
     }
 
     .btn{
-        background-color: #5fc0cd;
-        line-height: 1rem;
         width: 100%;
-        border: none;
+        margin-top: .77rem;
+        line-height: 1rem;
         font-size: 0.36rem;
         color: #fff;
-        margin-top: .77rem;
         letter-spacing:0.15rem;
+        background-color: $skin-color;
+        border: none;
+        outline: none;
         cursor:pointer;
     }
 
     p{
-        margin-top: .2rem;
-        color: #5fc0cd;
         float: right;
-        margin-right: .30rem;
+        margin:.2rem 0 .3rem 0;
+        color: #5fc0cd;
         cursor:pointer;
     }
 }
+

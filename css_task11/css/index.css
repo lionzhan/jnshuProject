@@ -1,14 +1,17 @@
 @charset "UTF-8";
 /*重置*/
+input {
+  width: 1rem; }
+
 /*默认*/
 html {
   font-size: 312.5%; }
 
 body {
   margin: 0;
-  background-color: #eff0f4;
   font-size: 0.32rem;
-  color: #fff; }
+  color: #fff;
+  background-color: #eff0f4; }
 
 /* 布局 */
 .g-hd {
@@ -32,8 +35,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  background-color: #5fc0cd;
-  line-height: .88rem; }
+  line-height: .88rem;
+  background-color: #5fc0cd; }
   .m-hd .close-btn,
   .m-hd .register-btn {
     cursor: pointer; }
@@ -49,23 +52,22 @@ body {
 
 .m-login .image-phone,
 .m-login .image-password {
-  width: .59rem;
-  height: .51rem;
-  margin: 0 .29rem;
-  float: left;
-  background-size: 100%; }
+  width: 1.17rem;
+  height: .51rem; }
 .m-login .image-phone {
-  background-image: url("../images/phone-icon.png"); }
+  background: url("../images/phone-icon.png") no-repeat center;
+  background-size: 50%; }
 .m-login .image-password {
-  background-image: url("../images/password-icon.png"); }
+  background: url("../images/password-icon.png") no-repeat center;
+  background-size: 50%; }
 .m-login input {
   flex: 1;
-  border: none;
   height: 0.49rem;
   font-size: .32rem;
   text-indent: .3rem;
-  outline: none;
-  border-left: 2px solid #e1e5e7; }
+  border: none;
+  border-left: 2px solid #e1e5e7;
+  outline: none; }
 .m-login :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #e1e5e7; }
@@ -77,20 +79,20 @@ body {
 .m-login input::-webkit-input-placeholder {
   color: #e1e5e7; }
 .m-login .btn {
-  background-color: #5fc0cd;
-  line-height: 1rem;
   width: 100%;
-  border: none;
+  margin-top: .77rem;
+  line-height: 1rem;
   font-size: 0.36rem;
   color: #fff;
-  margin-top: .77rem;
   letter-spacing: 0.15rem;
+  background-color: #5fc0cd;
+  border: none;
+  outline: none;
   cursor: pointer; }
 .m-login p {
-  margin-top: .2rem;
-  color: #5fc0cd;
   float: right;
-  margin-right: .30rem;
+  margin: .2rem 0 .3rem 0;
+  color: #5fc0cd;
   cursor: pointer; }
 
 /*# sourceMappingURL=index.css.map */
