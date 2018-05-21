@@ -38,7 +38,10 @@ select {
   /* Firefox */
   -webkit-appearance: none;
   /* Safari 和 Chrome */
-  outline: none; }
+  outline: none;
+  line-height: .8rem;
+  font-size: .28rem;
+  padding-left: 30%; }
 
 /*布局*/
 .g-bd1 {
@@ -125,6 +128,8 @@ select {
     background-color: #5fc0cd; }
 
 .m-ft2 {
+  display: flex;
+  justify-content: space-between;
   padding: .1rem 0;
   background-color: #f8fafb; }
   .m-ft2 .write {
@@ -139,8 +144,10 @@ select {
   .m-ft2 p {
     margin: 0; }
   .m-ft2 .home {
+    margin-left: 1.6rem;
     color: #5fc0cd; }
   .m-ft2 .myself {
+    margin-right: 1.6rem;
     color: #a5a5a5; }
   .m-ft2 > div {
     cursor: pointer; }
@@ -256,12 +263,10 @@ select {
     line-height: .8rem;
     font-size: .28rem; }
   .m-selectBox select {
-    position: absolute;
-    left: 0;
-    top: 0;
     height: 100%;
     z-index: 200;
-    background-color: transparent; }
+    background-color: transparent;
+    color: #a0a0a0; }
     .m-selectBox select option:first-child {
       display: none; }
 
@@ -330,7 +335,6 @@ select {
 
 .u-icon {
   display: inline-block;
-  width: 49%;
   text-align: center; }
 
 /* 统一设置雪碧图-背景图 */
@@ -378,5 +382,12 @@ select {
   left: 50%;
   margin: -0.24rem 0 0 -0.19rem;
   background: url("../images/task6_sprites.png") -10px -151px; }
+
+@media (max-width: 450px) {
+  .m-ft2 .home {
+    margin-left: 1rem; }
+
+  .m-ft2 .myself {
+    margin-right: 1rem; } }
 
 /*# sourceMappingURL=index.css.map */

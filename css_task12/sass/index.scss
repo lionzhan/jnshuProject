@@ -18,7 +18,7 @@ body {
     border-bottom: 1px solid #e1e5e7;
 }
 
-.f-borderRight0{
+.f-borderRight0 {
     border-right-width: 0 !important;
 }
 
@@ -50,6 +50,9 @@ select {
     -webkit-appearance: none;
     /* Safari 和 Chrome */
     outline: none;
+    line-height: .8rem;
+    font-size: .28rem;
+    padding-left: 30%;
 }
 
 /*布局*/
@@ -156,6 +159,8 @@ select {
 }
 
 .m-ft2 {
+    display: flex;
+    justify-content: space-between;
     padding: .1rem 0;
     background-color: #f8fafb;
     .write {
@@ -172,9 +177,11 @@ select {
         margin: 0;
     }
     .home {
+        margin-left: 1.6rem;
         color: #5fc0cd;
     }
     .myself {
+        margin-right: 1.6rem;
         color: #a5a5a5;
     }
     >div {
@@ -290,7 +297,7 @@ select {
 .m-selectBox {
     position: relative;
     text-align: center;
-    border:1px solid #e1e5e7;
+    border: 1px solid #e1e5e7;
     border-width: 0 1px 1px 0;
     .select-triangle {
         position: absolute;
@@ -314,39 +321,35 @@ select {
         font-size: .28rem;
     }
     select {
-        position: absolute;
-        left: 0;
-        top: 0;
         height: 100%;
         z-index: 200;
         background-color: transparent;
-
-        option:first-child
-        {
-        display: none;
+        color:#a0a0a0;
+        option:first-child {
+            display: none;
         }
     }
 }
 
-.m-mn{
+.m-mn {
     .info-li {
         padding: .3rem;
         border-bottom: 1px solid #e1e5e7;
         font-size: .26rem;
         color: #999999;
-      }
+    }
     .info-li .icon-font {
         display: flex;
         align-items: flex-start;
-      }
+    }
     .info-li .icon-font span {
         line-height: 1;
-      }
+    }
     .info-li .date-price {
         display: flex;
         align-items: center;
-      }
-    .info-li .date-price > span {
+    }
+    .info-li .date-price>span {
         flex: 1;
         padding-left: .38rem;
         overflow: hidden;
@@ -359,18 +362,19 @@ select {
         font-size: .28rem;
         font-weight: bold;
         color: #000;
-      }
+    }
     .info-li .date-price .price {
         width: 1.82rem;
         font-size: .3rem;
         color: red;
         line-height: .33rem;
-      }
-    .info-li .date-price .price > span {
+    }
+    .info-li .date-price .price>span {
         float: left;
         line-height: 1;
-      }
+    }
 }
+
 /*元件*/
 
 .u-shade {
@@ -404,8 +408,7 @@ select {
 }
 
 .u-icon {
-    display: inline-block;
-    width: 49%;
+    display: inline-block; // width: 49%;
     text-align: center;
 }
 
@@ -461,4 +464,13 @@ select {
     left: 50%;
     margin: -0.24rem 0 0 -0.19rem;
     background: url('../images/task6_sprites.png') -10px -151px;
+}
+
+@media (max-width:450px) {
+    .m-ft2 .home {
+        margin-left: 1rem;
+    }
+    .m-ft2 .myself {
+        margin-right: 1rem;
+    }
 }
