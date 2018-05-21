@@ -389,5 +389,8 @@ select {
 
   .m-ft2 .myself {
     margin-right: 1rem; } }
+@media (min-width: 768px) {
+  select {
+    padding-left: 40%; } }
 
 /*# sourceMappingURL=index.css.map */

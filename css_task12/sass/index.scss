@@ -474,3 +474,8 @@ select {
         margin-right: 1rem;
     }
 }
+@media (min-width:768px){
+    select{
+        padding-left: 40%;
+    }
+}
