@@ -265,6 +265,7 @@ ul {
   -webkit-appearance: none;
   /* Safari 和 Chrome */
   border: 1px solid #e7e7e7;
+  outline: none;
 }
 
 .m-mn .select-btn span {
