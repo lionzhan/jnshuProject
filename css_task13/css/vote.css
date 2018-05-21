@@ -1,0 +1,232 @@
+/*汉堡按钮 */
+.hamburgerBtn {
+  display: block;
+  position: relative;
+  width: .34rem;
+  height: .29rem;
+  border: none;
+  font-size: 0;
+  background-color: #29bde0;
+  cursor: pointer;
+}
+.hamburgerBtn:focus {
+  outline: none;
+}
+.hamburgerBtn > span {
+  display: block;
+  position: absolute;
+  height: .04rem;
+  top: .11rem;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.hamburgerBtn > span:after,
+.hamburgerBtn > span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: .04rem;
+  background-color: #fff;
+}
+.hamburgerBtn > span:after {
+  top: -0.11rem;
+}
+.hamburgerBtn > span:before {
+  bottom: -0.14rem;
+}
+/*汉堡按钮 */
+/* 重置 */
+html {
+  font-size: 312.5%;
+}
+body {
+  margin: 0;
+  font: 16px "微软雅黑";
+  font-size: 16px;
+  background-color: #29bde0;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+div,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+/* 布局 */
+.g-wrap {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 模块 */
+.m-hd {
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  max-width: 920px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .35rem .23rem .15rem;
+  text-align: center;
+  background-color: #29bde0;
+}
+.m-hd h3 {
+  color: #fff;
+  font-size: .34rem;
+}
+.m-ft {
+  display: flex;
+  bottom: 0;
+  position: fixed;
+  z-index: 1000;
+  max-width: 920px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: .43rem .73rem .61rem .78rem;
+  background-color: #29bde0;
+}
+.m-ft button {
+  flex: 1;
+  display: block;
+  border: none;
+  font-size: .4rem;
+  line-height: .88rem;
+  color: #fff;
+  background-color: #fbb435;
+  cursor: pointer;
+}
+.m-ft button:focus {
+  outline: none;
+}
+.m-mn {
+  margin-top: 49px;
+  margin-bottom: 98px;
+}
+.m-mn .tip-box .tip-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(185, 233, 245, 0.67);
+}
+.m-mn .tip-box .tip-title h3 {
+  margin-left: .43rem;
+  line-height: .83rem;
+  font-size: .26rem;
+}
+.m-mn .tip-box .tip-title .playBtn {
+  position: relative;
+  width: .53rem;
+  height: .53rem;
+  border-radius: 50%;
+  margin-right: .18rem;
+  font-size: 0;
+  background-color: #fbb435;
+  cursor: pointer;
+}
+.m-mn .tip-box .tip-title .playBtn span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  overflow: hidden;
+  border-width: 0.16rem 0 0.16rem 0.27rem;
+  border-color: transparent transparent transparent #ffffff;
+  position: absolute;
+  top: .12rem;
+  left: .18rem;
+}
+.m-mn .tip-box > span {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  overflow: hidden;
+  border-width: 0.15rem 0.075rem 0 0.075rem;
+  border-color: rgba(185, 233, 245, 0.67) transparent transparent transparent;
+}
+.m-mn .tip-box > span,
+.m-mn .tip-box > p {
+  margin-left: .4rem;
+}
+.m-mn .tip-box > p {
+  line-height: .47rem;
+  font-size: .24rem;
+  color: #fff;
+}
+.m-mn .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: .32rem;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+.m-mn .list .item {
+  width: 30%;
+  height: auto;
+}
+.m-mn .list .item:hover .icon {
+  visibility: visible;
+}
+.m-mn .list .item > div {
+  position: relative;
+  margin: 0 .03rem;
+  border: .05rem solid #fff;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 50% 0;
+}
+.m-mn .list .item > div > p {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vw;
+  height: 75%;
+  background-color: #f5c97b;
+  line-height: 1;
+}
+.m-mn .list .item > div > span {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #83b09a;
+  color: #fff;
+  height: 25%;
+  font-size: 3.2vw;
+  line-height: 1;
+}
+.m-mn .list .item .icon {
+  display: flex;
+  visibility: hidden;
+  margin-top: .2rem;
+  margin-bottom: .2rem;
+  justify-content: space-between;
+}
+.m-mn .list .item .icon li {
+  flex: 1;
+  margin: 0 .03rem;
+  cursor: pointer;
+}
+.m-mn .list .item .icon li img {
+  width: 100%;
+}

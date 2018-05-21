@@ -1,0 +1,188 @@
+@import "public.less";
+
+
+
+
+//变量
+@vote-backgroundColor:#29bde0;
+
+
+
+/* 重置 */
+html{
+    font-size:@px50;
+}
+
+body{
+    margin: 0;
+    font:16px "微软雅黑";
+    font-size: 16px;
+    background-color:@vote-backgroundColor;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+div,p,ul,ol,li{margin:0;padding:0;}
+ul{
+    list-style: none;
+}
+/* 布局 */
+.g-wrap{
+    position: relative;
+    max-width: 920px;
+    width:100%;
+    margin: 0 auto;
+}
+/* 模块 */
+.m-hd{
+    .fixed-body(top);
+    max-width: 920px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .35rem .23rem .15rem;
+    text-align: center;
+    background-color: @vote-backgroundColor;
+    h3{
+        color: #fff;
+        font-size: .34rem;
+    }
+}
+
+.m-ft{
+    display: flex;
+    .fixed-body(bottom);
+    max-width: 920px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: .43rem .73rem .61rem .78rem;
+    background-color: @vote-backgroundColor;
+    button{
+        flex: 1;
+        display: block;
+        border:none;
+        font-size: .4rem;
+        line-height: .88rem;
+        color: #fff;
+        background-color: #fbb435;
+        cursor: pointer;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+.m-mn{
+    margin-top: 49px;
+    margin-bottom: 98px;
+    .tip-box{
+        .tip-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(185, 233, 245, 0.67);
+            h3{
+                margin-left: .43rem;
+                line-height: .83rem;
+                font-size: .26rem;
+            }
+            .playBtn{
+                position: relative;
+                width: .53rem;
+                height: .53rem;
+                border-radius: 50%;
+                margin-right: .18rem;
+                font-size: 0;
+                background-color: #fbb435;
+                cursor: pointer;
+                span{
+                    .triangle-btn(right,.27rem,.32rem,#fff);
+                    position: absolute;
+                    top:.12rem;
+                    left: .18rem;
+                }
+            }
+        }
+        >span{
+            .triangle-btn(bottom,.15rem,.15rem,rgba(185, 233, 245, 0.67));
+           
+        }
+        >span,>p{
+            margin-left: .4rem;
+        }
+        >p{
+            line-height: .47rem;
+            font-size: .24rem;
+            color:#fff;
+        }
+    }
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: .32rem;
+        justify-content: space-between;
+        padding: 0 2%;
+        .item{
+            width: 30%;
+            // box-sizing:content-box;
+            height: auto;
+            &:hover .icon{
+                visibility: visible;
+            }
+            >div{
+                position: relative;
+                margin: 0 .03rem;
+                border:.05rem solid #fff;
+                box-sizing: border-box;
+                text-align: center;
+                padding: 50% 0;
+                >p{
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 4vw;
+                    height: 75%;
+                    background-color: #f5c97b;
+                    line-height: 1;
+                }
+                >span{
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #83b09a;
+                    color: #fff;
+                    height: 25%;
+                    font-size: 3.2vw;
+                    line-height: 1;
+                }
+            }
+
+            .icon{
+                display: flex;
+                visibility: hidden;
+                margin-top:.2rem;
+                margin-bottom: .2rem;
+                justify-content: space-between;
+                li{
+                    flex: 1;
+                    margin: 0 .03rem;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+    }
+}

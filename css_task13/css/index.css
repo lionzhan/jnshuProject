@@ -1,0 +1,144 @@
+/*汉堡按钮 */
+.hamburgerBtn {
+  display: block;
+  position: relative;
+  width: .34rem;
+  height: .29rem;
+  border: none;
+  font-size: 0;
+  background-color: #29bde0;
+  cursor: pointer;
+}
+.hamburgerBtn:focus {
+  outline: none;
+}
+.hamburgerBtn > span {
+  display: block;
+  position: absolute;
+  height: .04rem;
+  top: .11rem;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.hamburgerBtn > span:after,
+.hamburgerBtn > span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: .04rem;
+  background-color: #fff;
+}
+.hamburgerBtn > span:after {
+  top: -0.11rem;
+}
+.hamburgerBtn > span:before {
+  bottom: -0.14rem;
+}
+/*汉堡按钮 */
+/* 重置 */
+html {
+  font-size: 312.5%;
+}
+body {
+  margin: 0;
+  font: 16px "宋体";
+}
+/* 默认 */
+/* 统一调用背景图 */
+/* 统一清除浮动 */
+/* 布局 */
+.g-wrap {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 模块 */
+.nav-btn {
+  padding: .4rem 0 .22rem .22rem;
+  background-color: #29bde0;
+}
+.m-mn {
+  position: relative;
+  padding: .27rem .35rem .6rem;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+.m-mn .top,
+.m-mn .versions {
+  border: 1px solid #d0d0d0;
+  background-color: #fff;
+}
+.m-mn .top {
+  position: relative;
+  margin: 0 0 .25rem 0;
+  font-size: .35rem;
+  line-height: 1.15rem;
+  color: #9a9a9a;
+  cursor: pointer;
+}
+.m-mn .back-btn {
+  position: absolute;
+  right: .14rem;
+  top: 50%;
+  margin-top: -10px;
+  width: 12px;
+  height: 20px;
+  background-image: url("../images/back-btn.png");
+}
+.m-mn .versions {
+  position: relative;
+  padding: 0;
+}
+.m-mn .versions > h2 {
+  margin-bottom: .25rem;
+  border-bottom: 1px solid #fde1ae;
+  line-height: .9rem;
+  font-size: .38rem;
+  color: #fbb435;
+}
+.m-mn .versions span {
+  line-height: .77rem;
+  font-size: .25rem;
+  color: #787878;
+}
+.m-mn .version {
+  margin: 0 .5rem;
+  background-color: #69d1e9;
+  font-size: .32rem;
+  line-height: 1.32rem;
+  color: #fff;
+  cursor: pointer;
+}
+.m-mn .circles {
+  display: flex;
+  justify-content: center;
+}
+.m-mn .circles .circle {
+  margin: .04rem;
+  width: 0.17rem;
+  height: 0.17rem;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+.m-mn .circles .now {
+  background-color: #69d1e9;
+}
+.m-mn .triangle-btn {
+  position: absolute;
+  right: .1rem;
+  top: 3.95rem;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  overflow: hidden;
+  border-width: 0.275rem 0 0.275rem 0.3rem;
+  border-color: transparent transparent transparent #fbb435;
+  cursor: pointer;
+}
+/* 元件 */
+/* 功能 */
+/* 皮肤 */

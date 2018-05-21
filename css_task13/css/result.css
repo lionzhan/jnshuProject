@@ -1,0 +1,208 @@
+/*汉堡按钮 */
+.hamburgerBtn {
+  display: block;
+  position: relative;
+  width: .34rem;
+  height: .29rem;
+  border: none;
+  font-size: 0;
+  background-color: #29bde0;
+  cursor: pointer;
+}
+.hamburgerBtn:focus {
+  outline: none;
+}
+.hamburgerBtn > span {
+  display: block;
+  position: absolute;
+  height: .04rem;
+  top: .11rem;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.hamburgerBtn > span:after,
+.hamburgerBtn > span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: .04rem;
+  background-color: #fff;
+}
+.hamburgerBtn > span:after {
+  top: -0.11rem;
+}
+.hamburgerBtn > span:before {
+  bottom: -0.14rem;
+}
+/*汉堡按钮 */
+/* 重置 */
+html {
+  font-size: 312.5%;
+}
+body {
+  margin: 0;
+  font: 16px "微软雅黑";
+  font-size: 16px;
+}
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  font-size: .3rem;
+  color: #515151;
+  font-weight: bold;
+}
+/* 布局 */
+.g-wrap {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 模块 */
+.m-hd {
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  max-width: 920px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
+  padding: .18rem .18rem .20rem .19rem;
+  border-bottom: 1px solid #74d4eb;
+  background-color: #29bde0;
+  font-size: .34rem;
+  color: #fff;
+}
+.m-hd a {
+  height: 27px;
+  cursor: pointer;
+}
+.m-hd a.home-btn {
+  width: 26px;
+  background: url("../images/home-btn.png");
+}
+.m-hd a.info-btn {
+  width: 20px;
+  background: url("../images/info-btn.png");
+}
+.m-mn .main-top {
+  margin-top: 47px;
+  padding: .4rem .7rem 0;
+  background-color: #29bde0;
+}
+.m-mn .main-top .tip {
+  flex: none;
+  width: 176px;
+  height: 103px;
+  margin: 0 auto;
+  background: url("../images/tip.png");
+}
+.m-mn .main-top .tip h3 {
+  position: relative;
+  top: 1.33rem;
+  font-size: .48rem;
+  text-align: center;
+  color: #fff;
+}
+.m-mn .main-top .tip-text {
+  text-align: justify;
+  display: block;
+  margin: 0 auto;
+  padding: .21rem 0 0;
+  font-size: .33rem;
+  font-weight: bold;
+  color: #ffc865;
+  letter-spacing: 2.2px;
+}
+.m-mn .main-top .statistics {
+  flex: none;
+  width: 5rem;
+  padding: .4rem 0 .25rem;
+  font-size: .26rem;
+  color: #fff;
+}
+.m-mn .main-top .statistics ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: .1rem 0;
+  list-style: none;
+}
+.m-mn .main-top .statistics ul li {
+  flex: 0 0 33.33333333%;
+  padding: 0;
+}
+.m-mn .main-top .statistics ul li i {
+  width: .85rem;
+  display: inline-block;
+  text-align: justify;
+  font-style: normal;
+  vertical-align: text-top;
+  margin-bottom: -0.3rem;
+}
+.m-mn .main-top .statistics ul li i:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height: 0;
+}
+.m-mn .main-bottom {
+  padding: 0 0 66.5px 0;
+  font-size: .26rem;
+  color: #a6a6a6;
+}
+.m-mn .main-bottom .li-info {
+  position: relative;
+  padding: 0 .7rem .34rem;
+  border-bottom: 1px solid #dddddd;
+}
+.m-mn .main-bottom .li-info h3 {
+  line-height: .6rem;
+  margin-bottom: .1rem;
+}
+.m-mn .main-bottom .li-info p {
+  line-height: .5rem;
+}
+.m-mn .main-bottom .li-info .how-long {
+  display: block;
+  position: absolute;
+  top: .14rem;
+  right: 1rem;
+}
+.m-ft {
+  display: flex;
+  bottom: 0;
+  position: fixed;
+  z-index: 1000;
+  max-width: 920px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: .24rem 0 .19rem;
+  background-color: #99dff0;
+  filter: alpha(opacity=52);
+}
+.m-ft button {
+  flex: 1;
+  margin: 0 15px;
+  border: none;
+  border-radius: .1rem;
+  font-size: .4rem;
+  color: #fff;
+  line-height: .86rem;
+  cursor: pointer;
+  outline: none;
+}
+.m-ft button:first-child {
+  background-color: #f66f6f;
+}
+.m-ft button:last-child {
+  background-color: #fbb435;
+}
