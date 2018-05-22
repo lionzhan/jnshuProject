@@ -183,7 +183,7 @@ h3 {
   width: 100%;
   box-sizing: border-box;
   padding: .24rem 0 .19rem;
-  background-color: #99dff0;
+  background-color: rgba(153,223,240,.52);
   filter: alpha(opacity=52);
 }
 .m-ft button {
