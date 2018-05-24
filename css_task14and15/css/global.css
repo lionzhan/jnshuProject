@@ -242,6 +242,7 @@ a {
     box-sizing: border-box;
     border-bottom: 4px solid transparent; }
     .m-nav .item a {
+      display: block;
       line-height: 95px;
       font-size: 16px; }
     .m-nav .item:hover, .m-nav .item.active {
