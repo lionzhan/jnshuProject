@@ -18,8 +18,8 @@ function ranColor() {
 var App = function () {
     this.continueChange = true; //判断是否继续变色
     this.queue = false; //判断当前程序是否在变色
-    this.color_cache = [];
-    this.num_cache = [];
+    this.color_cache = [];//存储三个不同的颜色
+    this.num_cache = [];//存储三个不同的数字
     this.grids=document.getElementsByClassName("box");
 };
 
@@ -51,7 +51,7 @@ App.prototype = {
         }
         //随机获取三个不同的数字存入 this.num_cache
         while (this.num_cache.length < 3) {
-            item = ranNumber(0, 8);
+            item = ranNumber(0, 8);//返回一个0~8的随机整数
             if (this.num_cache.indexOf(item) >= 0) {
                 continue;
             }
@@ -85,7 +85,6 @@ App.prototype = {
 
     },
     startChange: function () {
-        console.log(this);
         /**
          * 1.判断是否已经在变色了。
          * 2.如果已经在变色，不改变现在的状态,跳出函数
