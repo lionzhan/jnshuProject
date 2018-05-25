@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*全局变量*/
+/* 重置 */
+div, p, ul, ol, li, body {
+  margin: 0;
+  padding: 0; }
+
+/* 默认 */
+/* 统一调用背景图 */
+/* 布局 */
+.g-box {
+  max-width: 600px;
+  margin: 0 auto; }
+
+/* 模块 */
+.m-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .m-box .box {
+    flex-basis: 30%;
+    margin: 2% 0;
+    padding: 15% 0;
+    border-radius: 5%;
+    background-color: orange; }
+
+/* 元件 */
+.u-btn {
+  margin: 10px 0;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: 1px solid orange;
+  text-align: center;
+  color: orange;
+  cursor: pointer; }
+  .u-btn:hover {
+    color: #fff;
+    background-color: orange; }
+
+/* 功能 */
+/* 皮肤 */
+
+/*# sourceMappingURL=global.css.map */
