@@ -16,7 +16,9 @@
 10. [css_task13][13]
 10. [css_task14and15][14]
 
-
+## js 任务
+***
+1. [js_task1][15]
 
 [1]: https://lionzhan.github.io/jnshuProject/css_task1/index.html
 [3]: https://lionzhan.github.io/jnshuProject/css_task3/index.html
@@ -30,3 +32,4 @@
 [12]: https://lionzhan.github.io/jnshuProject/css_task12/task12-1.html
 [13]: https://lionzhan.github.io/jnshuProject/css_task13/index.html
 [14]: https://lionzhan.github.io/jnshuProject/css_task14and15/index.html
+[15]: https://lionzhan.github.io/jnshuProject/js_task1/index.html
